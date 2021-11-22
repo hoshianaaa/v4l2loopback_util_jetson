@@ -34,7 +34,7 @@ while True:
     process_time = decimal(time.time() - start, 2)
     text = seconds_to_hhmmss(process_time)
     print(text)
-    cv.putText(copy, text, (10, 470), cv.FONT_HERSHEY_PLAIN, 5, (0, 0, 0), 2, cv.LINE_AA)
+    cv.putText(copy, text, (10, height - 10), cv.FONT_HERSHEY_PLAIN, 5, (0, 0, 0), 2, cv.LINE_AA)
 
     camera.schedule_frame(copy)
     time.sleep(1/10.0)
