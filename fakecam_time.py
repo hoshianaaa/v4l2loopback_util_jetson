@@ -7,7 +7,7 @@ import cv2 as cv
 import time
 import math
 
-check = True
+check = False
 
 def seconds_to_hhmmss(seconds):
   return time.strftime('%H:%M:%S', time.gmtime(seconds))
