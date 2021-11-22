@@ -34,7 +34,7 @@ while True:
     cv.putText(copy, text, (10, 470), cv.FONT_HERSHEY_PLAIN, 5, (0, 0, 0), 2, cv.LINE_AA)
 
     camera.schedule_frame(copy)
-    time.sleep(1/30.0)
+    time.sleep(1/10.0)
 
     if check:
       cv.imshow("fakecam",cv.cvtColor(copy, cv.COLOR_RGB2BGR))
