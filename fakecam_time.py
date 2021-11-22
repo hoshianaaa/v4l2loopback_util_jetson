@@ -9,6 +9,9 @@ import math
 
 check = False
 
+height=480
+width=640
+
 def seconds_to_hhmmss(seconds):
   return time.strftime('%H:%M:%S', time.gmtime(seconds))
 
@@ -19,11 +22,11 @@ start = time.time()
 
 args = sys.argv
 
-blue = np.zeros((480,640,3), dtype=np.uint8)
+blue = np.zeros((height,width,3), dtype=np.uint8)
 blue[:,:,2] = 255
 
 dev = args[1]
-camera = pyfakewebcam.FakeWebcam(dev, 640, 480)
+camera = pyfakewebcam.FakeWebcam(dev, width, height)
 
 while True:
 
